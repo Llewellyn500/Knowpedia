@@ -23,7 +23,7 @@ Knowpedia is a web-based application that allows users to create and edit their 
 ```
 python -m venv venv
 
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+source venv\Scripts\activate  # On Linux use `venv/bin/activate`
 
 pip install Flask markdown2
 ```
