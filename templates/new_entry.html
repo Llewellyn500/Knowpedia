@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Create New Entry</title>
-</head>
-<body>
-    <h1>Create New Entry</h1>
-    <form action="{{ url_for('new_entry') }}" method="post">
-        <label for="title">Title:</label><br>
-        <input type="text" id="title" name="title" required><br>
-        <label for="content">Content (Markdown):</label><br>
-        <textarea id="content" name="content" rows="10" required></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
+{% extends "base.html" %} {% block content %}
+<div class="new-article-content">
+  <h1>Create New Article</h1>
+  <hr/>
+  <form action="{{ url_for('new_entry') }}" method="post">
+    <label for="title">Title:</label><br />
+    <input type="text" id="title" name="title" required /><br />
+    <label for="content">Content (Markdown):</label><br />
+    <textarea id="content" name="content" rows="10" required></textarea><br />
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+{% endblock %}

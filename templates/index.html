@@ -1,14 +1,15 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div class="content">
-<h2>All Articles</h2>
-<p>Curiosity is the engine of knowledge, and the library is the fuel that keeps it running.</p>
-<hr/>
-<ul>
+  <h2>All Articles</h2>
+  <p>
+    Curiosity is the engine of knowledge, and the library is the fuel that keeps
+    it running.
+  </p>
+  <hr />
+  <ul>
     {% for title in titles %}
     <li><a href="{{ url_for('entry', title=title) }}">{{ title }}</a></li>
     {% endfor %}
-</ul>
+  </ul>
 </div>
 {% endblock %}
