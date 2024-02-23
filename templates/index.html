@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>All Entries</h2>
+<ul>
+    {% for title in titles %}
+    <li><a href="{{ url_for('entry', title=title) }}">{{ title }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

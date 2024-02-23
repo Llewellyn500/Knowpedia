@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<div id="content">{{ content | safe }}</div>
+<a href="{{ url_for('edit_entry', title=title) }}">Edit this entry</a>
+{% endblock %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    {% if titles %}
+        <ul>
+            {% for title, content in titles.items() %}
+                <li><a href="/wiki/{{ title }}">{{ title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No results found. <a href="{{ url_for('index') }}">Return to index page</a></p>
+    {% endif %}
+</body>
+</html>
