@@ -99,6 +99,7 @@ body {
 }
 .content p {
     margin-bottom: 0.4rem;
+    font-style: italic;
 }
 .content hr {
   margin-bottom: 1.5rem;
