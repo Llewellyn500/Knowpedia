@@ -1,6 +1,7 @@
 # Knowpedia
 
-Welcome to Knowpedia! This is a repository for our CSM 399 - Web-Based Concepts and Development course, Group 1S1.
+Welcome to Knowpedia!
+This is a repository for our CSM 399 - Web-Based Concepts and Development course, Group 1S1.
 
 ## Table of Contents
 
