@@ -2,7 +2,7 @@
 
 Welcome to Knowpedia!
 
-This is a repository for our CSM 399 - Web-Based Concepts and Development course, Group 1S1.
+This is a repository for our CSM 399 - Web-Based Concepts and Development, Group 1S1 Project work.
 
 ## Table of Contents
 
