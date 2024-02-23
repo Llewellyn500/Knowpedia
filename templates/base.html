@@ -17,14 +17,12 @@
           <a href="{{ url_for('random_entry') }}">Random Entry</a>
         </div>
       </div>
-      <form
-        action="{{ url_for('search') }}"
-        method="get"
-        style="display: inline"
-      >
-        <input type="text" name="q" placeholder="Search..." />
-        <button type="submit">Search</button>
-      </form>
+      <div class="search-box">
+        <form action="{{ url_for('search') }}" method="get">
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>        
+    </div>
     </header>
     <main>{% block content %}{% endblock %}</main>
   </body>
