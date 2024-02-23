@@ -16,7 +16,7 @@ Knowpedia is a web-based application that allows users to create and edit their 
 
 ## Installation
 
-- install python 3.12.2 or later
+- install python 3.12.2 or later from [here](https://www.python.org/downloads/)
 
 - open the repo and enter the following command:
 
