@@ -6,9 +6,11 @@ app = Flask(__name__)
 
 # Preloaded demo entries stored as markdown content
 entries = {
-    "Python": "# Python\n\nPython is an interpreted, high-level, and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace.",
-    "Flask": "# Flask\n\nFlask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.",
-    "Markdown": "# Markdown\n\nMarkdown is a lightweight markup language for creating formatted text using a plain-text editor. John Gruber and Aaron Swartz created Markdown in 2004 as a markup language that is appealing to human readers in its source code form."
+    "MIT News on Computer Science and Technology": "This article from MIT News showcases a range of innovative projects and research at MIT, including advances in energy-efficient computing, new models for drug interactions, and smart devices that enhance learning and interaction. It highlights the cutting-edge work being done at the intersection of computer science and technology, offering inspiration and insight into what's possible in the field​",
+    "The Cognitive Benefits of Learning to Code": "Published in Frontiers, this article presents a comprehensive look at how learning to code not only improves coding skills but also enhances a broad range of cognitive abilities. It discusses the positive effects on problem-solving, critical thinking, and creative thinking, among other skills, underscoring coding's relevance beyond the tech world​",
+    "Coding for and as Social Science": "From the London School of Economics' blog, this article explores the transformative potential of programming skills in social sciences. It discusses how coding can open up new methodologies for research, offer innovative ways to engage with digital social life, and even transform how social phenomena are studied and understood",
+    "Important Life Skills You Can Learn From Coding": "This article from the Singapore Management University (SMU) Blog discusses how coding isn't just for tech professionals but is a valuable skill that teaches logical thinking, problem-solving, and creativity. It makes a compelling case for the universality of computational thinking and its applicability to various aspects of life and decision-making",
+    "Automated Method Helps Researchers Quantify Uncertainty in Their Predictions": "An article from MIT News describes an easy-to-use technique that could aid a wide range of professionals, from economists to sports analysts, in making more accurate predictions. This highlights the practical applications of computer science and coding skills across different fields​"
 }
 
 # Convert markdown to HTML
