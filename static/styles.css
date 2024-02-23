@@ -53,21 +53,19 @@ body {
   text-align: center;
 }
 .search-box form {
-  display: inline-block; 
-  border-radius: 0.4rem; 
-  overflow: hidden; 
-  background-color: #fff; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  display: inline-block;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 .search-box input[type="text"] {
-  border: none; 
-  padding: 10px 20px; 
-  margin: 0; 
-  outline: none; 
+  border: none;
+  padding: 10px 20px;
+  margin: 0;
+  outline: none;
   font-size: 16px;
 }
-
 .search-box button {
   border: none;
   background: transparent;
@@ -76,6 +74,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
+  border-left: solid 2px #cecece;
   transition-duration: 0.4s;
 }
 .search-box button:hover {
