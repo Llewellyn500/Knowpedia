@@ -9,7 +9,7 @@ This is a repository for our CSM 399 - Web-Based Concepts and Development, Group
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributors](#contributors)
+- [Group Members](#groupmembers)
 - [Folder Structure](#folder-structure)
 
 ## Introduction
@@ -36,9 +36,18 @@ pip install Flask markdown2
 flusk run
 ```
 
-## Contributors
+## Group Members
 
-...
+- [Paintsil Llewellyn Kobina Adonteng](https://github.com/Llewellyn500)
+- ADJETEY SOWAH Sharon Naa Adjeley
+- ARKOH Theophilus
+- BOATENG Peter Nkansah Brantuo
+- DICKSON Angel Hope
+- MACDUMOGAH Alfreda
+- MENSAH Caleb Opoku Kudom
+- NTI Hakeem
+- OMABOE Leroy Junior
+- WILLIAMS Spencer Edinam
 
 ## Folder Structure
 
