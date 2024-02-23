@@ -9,7 +9,7 @@ This is a repository for our CSM 399 - Web-Based Concepts and Development, Group
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Group Members](#groupmembers)
+- [Group Members](#group-members)
 - [Folder Structure](#folder-structure)
 
 ## Introduction
