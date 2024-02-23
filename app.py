@@ -1,3 +1,5 @@
+# This python script handles all the logic behind the web app. I've added comments for every line to help you understand easily.
+
 from flask import Flask, render_template, request, redirect, url_for
 import markdown2
 import random
@@ -15,45 +17,61 @@ entries = {
 
 # Convert markdown to HTML
 def markdown_to_html(markdown_content):
+    # Use markdown2 library to convert markdown to HTML
     return markdown2.markdown(markdown_content)
 
 @app.route("/")
 def index():
-    all_titles = sorted(entries.keys())  # Get all titles, sorted alphabetically
+    # Get all titles, sorted alphabetically
+    all_titles = sorted(entries.keys())
+    # Render the index page with the titles
     return render_template("index.html", titles=all_titles)
 
 @app.route("/wiki/<title>")
 def entry(title):
+    # Check if the title exists in the entries
     if title in entries:
+        # Convert the markdown content to HTML
         content = markdown_to_html(entries[title])
+        # Render the entry page with the title and content
         return render_template("entry.html", title=title, content=content)
     else:
+        # If the title does not exist, render the error page
         return render_template("error.html", message="The requested page was not found.")
 
 @app.route("/search", methods=["GET"])
 def search():
+    # Get the query from the request parameters
     query = request.args.get("q")
     if query:
+        # Filter the entries based on the query
         filtered_titles = {title: markdown_to_html(content) for title, content in entries.items() if query.lower() in title.lower()}
         if filtered_titles:
+            # If there are results, render the search results page
             return render_template("search_results.html", titles=filtered_titles)
+    # If there is no query or no results, redirect to the index page
     return redirect(url_for('index'))
 
 @app.route("/new", methods=["GET", "POST"])
 def new_entry():
     if request.method == "POST":
+        # Get the title and content from the form data
         title = request.form.get("title")
         content = request.form.get("content")
         if title in entries:
+            # If the title already exists, render the error page
             return render_template("error.html", message="An entry with this title already exists.")
         else:
+            # Otherwise, add the new entry and redirect to its page
             entries[title] = content
             return redirect(url_for('entry', title=title))
+    # If it's a GET request, render the new entry page
     return render_template("new_entry.html")
 
 @app.route("/edit", methods=["GET", "POST"])
 def edit_entry():
     if request.method == "POST":
+        # Get the original title, new title, and content from the form data
         original_title = request.form.get("original_title")
         new_title = request.form.get("title")
         content = request.form.get("content")
@@ -80,8 +98,11 @@ def edit_entry():
 
 @app.route("/random")
 def random_entry():
+    # Choose a random title
     title = random.choice(list(entries.keys()))
+    # Redirect to the page for the random title
     return redirect(url_for('entry', title=title))
 
 if __name__ == "__main__":
+    # Run the app in debug mode
     app.run(debug=True)
