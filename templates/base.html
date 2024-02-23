@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Knowpedia</title>
-   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
     <header>
-        <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('new_entry') }}">Create New Entry</a>
-        <a href="{{ url_for('random_entry') }}">Random Entry</a>
-        <form action="{{ url_for('search') }}" method="get" style="display:inline;">
-            <input type="text" name="q" placeholder="Search...">
-            <button type="submit">Search</button>
-        </form>
+      <div class="nav-container">
+        <a href="{{ url_for('index') }}" class="home-link">KNOWPEDIA</a>
+        <div class="links-container">
+          <a href="{{ url_for('new_entry') }}">Create New Entry</a>
+          <a href="{{ url_for('random_entry') }}">Random Entry</a>
+        </div>
+      </div>
+      <form
+        action="{{ url_for('search') }}"
+        method="get"
+        style="display: inline"
+      >
+        <input type="text" name="q" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </form>
     </header>
-    <main>
-        {% block content %}{% endblock %}
-    </main>
-</body>
+    <main>{% block content %}{% endblock %}</main>
+  </body>
 </html>
