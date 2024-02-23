@@ -123,7 +123,7 @@ body {
 }
 .content ul li a {
   text-decoration: none;
-  color: #333;
+  color: #000;
   display: block;
 }
 .content ul li:hover {
@@ -166,7 +166,7 @@ body {
 }
 .search-content ul li a {
   text-decoration: none;
-  color: #333;
+  color: #000;
   display: block;
 }
 .search-content ul li:hover {
