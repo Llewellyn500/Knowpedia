@@ -181,6 +181,7 @@ body {
     border-radius: 0.4rem;
     width: 80%;
     margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
     padding: 1.5rem;
   }
   .entry-content h1 {
@@ -267,4 +268,71 @@ textarea {
 }
 .new-article-content input[type="submit"]:hover {
     background-color: #707070;
+}
+
+/* Edit Entry */
+.edit-content {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    width: 80%;
+    margin-top: 1.3rem;
+    padding: 1.5rem;
+  }
+  .edit-content h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+  .edit-content hr {
+    margin-bottom: 1.5rem;
+    height: 0.2rem;
+    background-color: #00000056;
+    border-radius: 0.4rem;
+    border: none;
+  }
+  .edit-content label {
+    display: block;
+    margin-top: 2rem; 
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.edit-content input[type="text"],
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 3px solid #ddd; 
+    border-radius: 0.4rem; 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
+}
+.edit-content input[type="submit"] {
+    background-color: #535353; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    margin-top: 10px; 
+    width: auto;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 0.4rem;
+    transition-duration: 0.4s;
+}
+.edit-content input[type="submit"]:hover {
+    background-color: #707070;
+}
+.edit-content .cancel-btn{
+    margin-top: 1.4rem;
+}
+.edit-content .cancel-btn a {
+    background-color: rgb(221, 32, 32);
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 0.4rem;
+    transition-duration: 0.4s;
 }
