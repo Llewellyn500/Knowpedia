@@ -78,6 +78,53 @@ body {
   transition-duration: 0.4s;
 }
 .search-box button:hover {
-  background-color: #1296f3;
+  background-color: #535353;
   color: #fff;
 }
+
+/* All entries */
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  width: 80%;
+  margin-top: 1.3rem;
+  padding: 1.5rem;
+}
+.content h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.content p {
+    margin-bottom: 0.4rem;
+}
+.content hr {
+  margin-bottom: 1.5rem;
+  height: 0.2rem;
+  background-color: #00000056;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.content ul li {
+    padding: 8px 16px;
+    background-color: #f7f7f7;
+    margin-bottom: 1rem;
+}
+.content ul li a {
+    text-decoration: none;
+    color: #333; 
+    display: block; 
+}
+.content ul li:hover {
+    background-color: #e9e9e9; 
+} 
